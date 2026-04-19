@@ -123,12 +123,16 @@ function HomePage() {
               Quietly powerful, beautifully simple.
             </h2>
             <p className="mt-5 text-muted-foreground">
-              Every ingredient earns its place. Niacinamide for clarity. Hyaluronic
-              acid for hydration. Aloe vera and green tea to calm. Nothing
-              harsh, nothing unnecessary.
+              Every ingredient earns its place. Niacinamide for clarity and brightness. Aloe Vera to soothe and calm.
+              Coconut water for gentle hydration.
+              Nothing harsh. Nothing unnecessary.
             </p>
             <ul className="mt-6 space-y-3">
-              {["Niacinamide 3% — refines pores & evens tone", "Hyaluronic acid — deep barrier hydration", "Aloe vera — soothes & calms", "Green tea extract — antioxidant defence"].map((i) => (
+              {["Niacinamide — Helps refine pores, control oil, and even out skin tone",
+                "Aloe Barbadensis Leaf Juice — Soothes irritated skin and provides deep hydration",
+                "Coconut Water Extract — Rich in minerals, refreshes and hydrates the skin",
+                "Glycerin — Attracts and locks in moisture for soft, supple skin",
+                "Salicylic Acid — Gently exfoliates and helps clear pores"].map((i) => (
                 <li key={i} className="flex items-start gap-3 text-sm text-foreground">
                   <span className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-primary" />
                   {i}
