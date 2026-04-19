@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { BuyOnAmazon } from "./BuyOnAmazon";
+import { ThemeToggle } from "./ThemeToggle";
 
 const nav = [
   { to: "/", label: "Home" },
@@ -36,20 +37,24 @@ export function SiteHeader() {
           ))}
         </nav>
 
-        <div className="hidden md:block">
+        <div className="hidden items-center gap-3 md:flex">
+          <ThemeToggle />
           <BuyOnAmazon size="sm" label="Shop on Amazon" />
         </div>
 
-        <button
-          className="md:hidden p-2 -mr-2"
-          onClick={() => setOpen((v) => !v)}
-          aria-label="Toggle menu"
-          aria-expanded={open}
-        >
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75">
-            {open ? <path d="M6 6l12 12M6 18L18 6" /> : <path d="M4 7h16M4 12h16M4 17h16" />}
-          </svg>
-        </button>
+        <div className="flex items-center gap-2 md:hidden">
+          <ThemeToggle />
+          <button
+            className="p-2 -mr-2"
+            onClick={() => setOpen((v) => !v)}
+            aria-label="Toggle menu"
+            aria-expanded={open}
+          >
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75">
+              {open ? <path d="M6 6l12 12M6 18L18 6" /> : <path d="M4 7h16M4 12h16M4 17h16" />}
+            </svg>
+          </button>
+        </div>
       </div>
 
       {open && (

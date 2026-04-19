@@ -6,10 +6,10 @@ import texture from "@/assets/texture.jpg";
 export const Route = createFileRoute("/product")({
   head: () => ({
     meta: [
-      { title: "Acquena Face Cleanser — Ingredients, Benefits & How to Use" },
-      { name: "description", content: "Discover the full Acquena face cleanser: gentle sulfate-free formula, natural ingredients, benefits, how to use, and where to buy on Amazon India." },
-      { property: "og:title", content: "Acquena Face Cleanser — Full Product Details" },
-      { property: "og:description", content: "Sulfate-free, dermatologist-tested daily cleanser. See ingredients & buy on Amazon." },
+      { title: "Acquena Hydrating Gel Cleanser 100ml — Coconut-Powered Daily Face Wash" },
+      { name: "description", content: "Acquena Hydrating Gel Cleanser with Cocos Nucifera (coconut) extract. Oil-balancing, deeply hydrating, soothing. 100ml. Buy on Amazon India." },
+      { property: "og:title", content: "Acquena Hydrating Gel Cleanser 100ml" },
+      { property: "og:description", content: "Coconut-derived gentle cleanser. Hydrates, soothes & supports skin barrier. Sold on Amazon India." },
       { property: "og:image", content: productBottle },
       { name: "twitter:image", content: productBottle },
     ],
@@ -18,14 +18,14 @@ export const Route = createFileRoute("/product")({
 });
 
 const ingredients = [
-  { name: "Niacinamide 3%", purpose: "Refines pores, evens skin tone, controls excess oil." },
-  { name: "Hyaluronic Acid", purpose: "Pulls moisture into the skin and supports the barrier." },
-  { name: "Aloe Vera Extract", purpose: "Soothes irritation and calms redness." },
-  { name: "Green Tea Extract", purpose: "Antioxidant protection against pollution and free radicals." },
-  { name: "Glycerin", purpose: "Locks in long-lasting hydration." },
-  { name: "Vitamin E", purpose: "Nourishes and protects skin from environmental stress." },
-  { name: "Coco-Glucoside", purpose: "Plant-derived gentle cleansing agent — no sulfates." },
-  { name: "Panthenol (Pro-Vitamin B5)", purpose: "Strengthens the moisture barrier." },
+  { name: "Cocos Nucifera (Coconut) Extract", purpose: "Hero active — gently cleanses while preserving the skin's natural moisture barrier." },
+  { name: "Coco-Glucoside", purpose: "Plant-derived, sulfate-free surfactant from coconut. Lifts away oil & impurities without stripping." },
+  { name: "Glycerin", purpose: "Humectant that draws water into the skin for long-lasting, lightweight hydration." },
+  { name: "Aloe Barbadensis Leaf Extract", purpose: "Soothes irritation, calms redness and cools post-cleanse." },
+  { name: "Panthenol (Pro-Vitamin B5)", purpose: "Strengthens and supports the skin barrier for improved resilience." },
+  { name: "Sodium Hyaluronate", purpose: "Low-molecular hyaluronic acid — deep hydration that reaches beyond the surface." },
+  { name: "Allantoin", purpose: "Soothing skin conditioner that reduces sensitivity and supports recovery." },
+  { name: "Tocopherol (Vitamin E)", purpose: "Antioxidant that protects against pollution and environmental stress." },
 ];
 
 const steps = [
@@ -51,18 +51,23 @@ function ProductPage() {
           />
         </div>
         <div className="flex flex-col justify-center">
-          <p className="text-xs uppercase tracking-[0.2em] text-primary">Daily Cleanser · 150ml</p>
+          <p className="text-xs uppercase tracking-[0.2em] text-primary">Hydrating Gel Cleanser · 100ml</p>
           <h1 className="mt-3 font-serif text-4xl leading-tight text-foreground sm:text-5xl">
-            Acquena Gentle Daily Face Cleanser
+            Acquena Hydrating Gel Cleanser
           </h1>
           <p className="mt-5 text-base leading-relaxed text-muted-foreground">
-            A weightless, sulfate-free gel cleanser that lifts away oil, dirt
-            and pollution while preserving your skin's natural moisture
-            barrier. Suitable for all skin types — including sensitive.
+            A coconut-powered, weightless gel cleanser that balances oil and
+            delivers deep hydration — without stripping your skin's natural
+            moisture barrier. Suitable for normal, oily and combination skin.
           </p>
 
           <ul className="mt-6 space-y-2 text-sm text-foreground">
-            {["Sulfate-free, paraben-free, fragrance-free", "Dermatologist-tested for daily use", "Vegan & cruelty-free", "Made in India"].map((f) => (
+            {[
+              "Coconut-derived gentle cleansing — sulfate-free",
+              "Oil-balancing & deeply hydrating",
+              "Soothes & strengthens the skin barrier",
+              "Not tested on animals · Made in India",
+            ].map((f) => (
               <li key={f} className="flex items-center gap-2">
                 <span className="text-primary">✓</span> {f}
               </li>
@@ -75,7 +80,7 @@ function ProductPage() {
           </div>
 
           <p className="mt-4 text-xs text-muted-foreground">
-            Sold exclusively on Amazon India · Free Prime shipping
+            ₹299 on Amazon India · Sold by ACQUENA · Free delivery
           </p>
         </div>
       </section>

@@ -2,6 +2,7 @@ import { Outlet, Link, createRootRoute, HeadContent, Scripts } from "@tanstack/r
 import appCss from "../styles.css?url";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
+import { themeInitScript } from "@/components/ThemeToggle";
 
 function NotFoundComponent() {
   return (
@@ -50,6 +51,7 @@ function RootShell({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <head>
+        <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
         <HeadContent />
       </head>
       <body>
