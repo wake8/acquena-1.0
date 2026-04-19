@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { BuyOnAmazon } from "@/components/BuyOnAmazon";
-import heroProduct from "@/assets/hero-product.jpg";
+import heroProduct from "@/assets/hero-product.jpeg";
 import lifestyle from "@/assets/lifestyle.jpg";
 import ingredients from "@/assets/ingredients.jpg";
 import { POSTS } from "@/lib/blog";

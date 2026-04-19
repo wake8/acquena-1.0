@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { BuyOnAmazon } from "@/components/BuyOnAmazon";
-import productBottle from "@/assets/product-bottle.jpg";
+import productBottle from "@/assets/product-bottle.jpeg";
 import texture from "@/assets/texture.jpg";
 
 export const Route = createFileRoute("/product")({
