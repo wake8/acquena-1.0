@@ -70,6 +70,35 @@
   --amazon-hover: oklch(0.65 0.17 60);
 }
 
+.dark {
+  --background: oklch(0.18 0.012 145);       /* deep forest night */
+  --foreground: oklch(0.95 0.015 85);        /* warm cream text */
+
+  --card: oklch(0.22 0.014 145);
+  --card-foreground: oklch(0.95 0.015 85);
+
+  --primary: oklch(0.78 0.06 130);           /* soft sage glows in dark */
+  --primary-foreground: oklch(0.18 0.012 145);
+
+  --secondary: oklch(0.26 0.015 145);
+  --secondary-foreground: oklch(0.92 0.018 85);
+
+  --muted: oklch(0.24 0.012 145);
+  --muted-foreground: oklch(0.7 0.02 110);
+
+  --accent: oklch(0.45 0.06 145);
+  --accent-foreground: oklch(0.95 0.015 85);
+
+  --border: oklch(0.32 0.015 140);
+
+  --cream: oklch(0.22 0.014 145);
+  --sage: oklch(0.55 0.065 135);
+  --sage-deep: oklch(0.78 0.06 130);
+  --clay: oklch(0.6 0.05 60);
+  --amazon: oklch(0.72 0.16 65);
+  --amazon-hover: oklch(0.78 0.16 65);
+}
+
 @layer base {
   * {
     border-color: var(--color-border);
